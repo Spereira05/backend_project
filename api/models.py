@@ -1,9 +1,6 @@
-import pydantic
 from pydantic import BaseModel
 
-class Manga(BaseModel):
+class Anime(BaseModel):
     id: int
     title: str
-    type: str
-    author: str
-
+    synopsis: str

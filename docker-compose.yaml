@@ -1,15 +1,8 @@
-version: "latest"
-services: 
+services:
   api:
     build: .
     volumes:
       - .:/app
     ports:
       - 8000:8000
-  django:
-    build: .
-    volumes:
-      - .:/app
-    ports:
-      - 8080:8080
-
+    command: poetry run uvicorn api.main:app --host 0.0.0.0 --reload

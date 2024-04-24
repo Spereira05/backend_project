@@ -9,10 +9,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.110.2"
-django = "^5.0.4"
 mangadex = "^2.5.2"
 uvicorn = "^0.29.0"
 httpx = "^0.27.0"
+mal = "^0.4.0"
 
 
 [build-system]
